@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 // Application-specific Values
-def mavenArgs="-Dcom.redhat.xpaas.repo.redhatga"     // Global maven arguments
+def mavenArgs=" --settings=settings.xml -Dcom.redhat.xpaas.repo.redhatga"     // Global maven arguments
 def mavenPackageArgs="package spring-boot:repackage" // Maven package arguments
 def mavenOutputJar="parksmap-web.jar"                // Output jar from Maven
 def appName="parksmap"                               // Application name (for route, buildconfig, deploymentconfig)
